@@ -13,20 +13,20 @@ Selenium-Java-Cucumber test automation framework to test Buggy Car Ratings
 
 **How to run the test ?**
 - Create a directory
-- Use commandline, terminal or git bash to go to the directory location 
+- Use commandline or terminal or git bash and go to the directory location 
 - Go to the repository location in Github and copy the https github link to clone this repo (You can find it by clicking "Code" button inside the repository )
 - Run the command:  git clone <copiedlink>
 - Once you see 100% and done, the project has completed downloading
 - Now open the project using intellij
 - In BaseClass.java line 12: change the location of the chrome driver to the one on your machine
-- Create a new Junit Run/Debug config in intellij with following
+- Create a new Junit Run/Debug config in intellij or eclipse with following
     Name: TestRunnerConfig
     Class: TestRunner.testbuggycarratingrunner
     Working directory: \$MODULE_WORKING_DIR\$
     Classpath of module: buggycarsrating-automation.test
 - Click apply
-- Run this config by clicking the run symbol in Intellij  **(OR)** 
-  Open the testbuggycarratingrunner.java file and right click and choose Run 'testbuggycarratingrunner'
+- Run "TestRunnerConfig" by clicking the run symbol in Intellij  **(OR)** 
+  Open the testbuggycarratingrunner.java file, right click and select  Run'testbuggycarratingrunner'
 
 
 
