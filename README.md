@@ -1,4 +1,4 @@
-Selenium-Java-Cucumber test automation framework to test Buggy Car Ratings
+Selenium-Java-Cucumber-Gradle test automation framework to test Buggy Car Ratings
 
 **Top Five Functionalities Covered:**
 
@@ -9,7 +9,7 @@ Selenium-Java-Cucumber test automation framework to test Buggy Car Ratings
 5. Logout
 
 
-**Tools Required:** JDK 1.8, Intellij/Eclipse, ChromeDriver compatible with browser version
+**Tools Required:** JDK 1.8, Intellij/Eclipse, Cucumber, Gherkin, Gradle, Chrome Browser, ChromeDriver compatible with the installed chrome version(latest version is preferable)
 
 **How to run the test ?**
 - Create a directory
