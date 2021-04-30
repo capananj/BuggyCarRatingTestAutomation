@@ -1,0 +1,14 @@
+TestRunner/testbuggycarratingrunner.java
+ TestRunner.testbuggycarratingrunner
+utilities/BaseClass.java
+ utilities.BaseClass
+pageobjects/Registeration.java
+ pageobjects.Registeration
+pageobjects/Homepage.java
+ pageobjects.Homepage
+pageobjects/VoteForCarModel.java
+ pageobjects.VoteForCarModel
+pageobjects/Profile.java
+ pageobjects.Profile
+definitions/BuggyCarRatingsTestStepsDefinitions.java
+ definitions.BuggyCarRatingsTestStepsDefinitions
