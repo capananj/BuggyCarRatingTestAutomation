@@ -20,10 +20,11 @@ Selenium-Java-Cucumber-Gradle test automation framework to test Buggy Car Rating
 - Now open the project using intellij
 - In BaseClass.java line 12: change the location of the chrome driver to the one on your machine
 - Create a new Junit Run/Debug config in intellij or eclipse with following
-    Name: TestRunnerConfig
-    Class: TestRunner.testbuggycarratingrunner
-    Working directory: \$MODULE_WORKING_DIR\$
-    Classpath of module: buggycarsrating-automation.test
+    - Name: TestRunnerConfig
+    - Build and run: Java 8
+    - Classpath of module: buggycarsrating-automation.test
+    - Class: TestRunner.testbuggycarratingrunner
+    - Working directory: \$MODULE_WORKING_DIR\$
 - Click apply
 - Run "TestRunnerConfig" by clicking the run symbol in Intellij  **(OR)** 
   Open the testbuggycarratingrunner.java file, right click and select  Run'testbuggycarratingrunner'
