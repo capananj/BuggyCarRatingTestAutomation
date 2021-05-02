@@ -28,6 +28,11 @@ Selenium-Java-Cucumber-Gradle test automation framework to test Buggy Car Rating
 - Click apply
 - Run "TestRunnerConfig" by clicking the run symbol in Intellij  **(OR)** 
   Open the testbuggycarratingrunner.java file, right click and select  Run'testbuggycarratingrunner'
+    
+  **Notes**  
+  - Test approach documented and attached in repo as TestApproachForBuggyCarsRatingByDeepika.pdf
+  - Bug report documented and attached in repo as BugReportForBuggyCarsRatingByDeepika.pdf
+  
 
 
 
