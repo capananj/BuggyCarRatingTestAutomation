@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.BaseClass;
 
-public class VoteForCarModel extends BaseClass {
+public class CarModel extends BaseClass {
 
     WebDriverWait wait = new WebDriverWait (driver, 10);
 
@@ -15,9 +15,9 @@ public class VoteForCarModel extends BaseClass {
      By CarsTable = By.xpath("//table");
      By RandomCarModel = By.xpath("//table/tbody/tr[2]/td[3]/a");
      By Comment = By.cssSelector("textarea[id='comment']");
-     By vote = By.cssSelector(".btn-success");
-     By votesuccessmsg = By.cssSelector(".card-block p");
-     String testcomment = "Random comments " + RandomStringUtils.randomAlphabetic(3);
+     By Vote = By.cssSelector(".btn-success");
+     By Votesuccessmsg = By.cssSelector(".card-block p");
+     String Testcomment = "Random comments " + RandomStringUtils.randomAlphabetic(3);
      public String thankyoutext;
 
 
@@ -29,10 +29,10 @@ public class VoteForCarModel extends BaseClass {
         wait.until(ExpectedConditions.visibilityOfElementLocated(CarsTable));
         driver.findElement(RandomCarModel).click();
         wait.until(ExpectedConditions.elementToBeClickable(Comment));
-        driver.findElement(Comment).sendKeys(testcomment);
-        driver.findElement(vote).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(votesuccessmsg));
-        thankyoutext = driver.findElement(votesuccessmsg).getText();
+        driver.findElement(Comment).sendKeys(Testcomment);
+        driver.findElement(Vote).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(Votesuccessmsg));
+        thankyoutext = driver.findElement(Votesuccessmsg).getText();
     }
 
 }

@@ -7,7 +7,7 @@ import cucumber.api.java.en.Given;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Assert;
 import pageobjects.Homepage;
-import pageobjects.VoteForCarModel;
+import pageobjects.CarModel;
 import pageobjects.Profile;
 import pageobjects.Registeration;
 import utilities.BaseClass;
@@ -17,11 +17,11 @@ public class BuggyCarRatingsTestStepsDefinitions extends BaseClass {
     private static final String randomlogin = "RANDOM" + RandomStringUtils.randomAlphabetic(3);
     private static final String randomfname = "RANDOM" + RandomStringUtils.randomAlphabetic(3);
     private static final String randomlname = "RANDOM" + RandomStringUtils.randomAlphabetic(3);
-    private static final String randompassword = "Randomuser@123";
+    private static final String randompassword = "Testuser@123";
 
     Registeration registeration;
     Homepage hmpage;
-    VoteForCarModel voteForCarModel;
+    CarModel carModel;
     Profile profile;
 
 
@@ -58,9 +58,9 @@ public class BuggyCarRatingsTestStepsDefinitions extends BaseClass {
     @And("^I am able to vote$")
     public void ableToVote()
     {
-        voteForCarModel = new VoteForCarModel();
-        voteForCarModel.goToListOfAllModelsAndVote();
-        Assert.assertEquals(voteForCarModel.thankyoutext, "Thank you for your vote!");
+        carModel = new CarModel();
+        carModel.goToListOfAllModelsAndVote();
+        Assert.assertEquals(carModel.thankyoutext, "Thank you for your vote!");
     }
 
     @And("^I am able to view my profile$")
